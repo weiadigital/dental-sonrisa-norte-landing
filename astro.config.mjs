@@ -7,5 +7,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindPlugin()],
   },
-  integrations: ['vercel'],
+  // integrations: [] // Vercel integration temporarily omitted to fix build
 });
