@@ -1,9 +1,8 @@
-/** Tailwind configuration for Astro project */
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{astro,ts,tsx,js}'],
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
-      // Custom spacing scales based on design-system
       spacing: {
         '72': '18rem',
         '84': '21rem',

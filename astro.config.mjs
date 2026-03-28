@@ -1,10 +1,8 @@
 import { defineConfig } from 'astro/config';
-import tailwindPlugin from '@tailwindcss/vite';
+import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: 'https://dentalsoniranorte.example',
   output: 'static',
-  vite: {
-    plugins: [tailwindPlugin()],
-  },
+  integrations: [tailwind()],
 });
