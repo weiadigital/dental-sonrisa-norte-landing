@@ -1,1 +1,20 @@
-{\n  "name": "dental-sonrisa-norte-landing",\n  "version": "0.1.0",\n  "private": true,\n  "type": "module",\n  "scripts": {\n    "dev": "astro dev --port 5173",\n    "build": "astro build",\n    "preview": "astro preview --port 5173"\n  },\n  "dependencies": {},\n  "devDependencies": {\n    "astro": "^6.0.0",\n    "@astrojs/vercel": "^4.0.0",\n    "@tailwindcss/vite": "^4.0.0",\n    "tailwindcss": "^4.0.0",\n    "postcss": "^8.4.21",\n    "autoprefixer": "^10.4.14"\n  }\n}
+{
+  "name": "dental-sonrisa-norte-landing",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "astro": "^6.0.0",
+    "@astrojs/vercel": "^4.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "postcss": "^8.4.21",
+    "autoprefixer": "^10.4.14"
+  }
+}
