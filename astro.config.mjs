@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import vercel from '@astrojs/vercel';
 import tailwindPlugin from '@tailwindcss/vite';
 
 export default defineConfig({
@@ -8,5 +7,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindPlugin()],
   },
-  integrations: [vercel()],
+  integrations: ['vercel'],
 });
