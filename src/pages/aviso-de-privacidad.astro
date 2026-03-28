@@ -1,0 +1,22 @@
+---
+import { Inter } from 'astro:fonts';
+import '../styles/global.css';
+const inter = Inter({ subsets: ['latin'], weight: ['400','700'] });
+---
+<!doctype html>
+<html lang="es-MX" class={inter.className}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aviso de Privacidad - Dental Sonrisa Norte</title>
+  </head>
+  <body class="bg-[oklch(98% 0 0deg)] text-[var(--text)]">
+    <header class="w-full">
+      <div class="max-w-5xl mx-auto px-4 py-4"><strong>Dental Sonrisa Norte</strong></div>
+    </header>
+    <main class="max-w-5xl mx-auto px-4 py-6 reveal">
+      <h1 class="text-2xl font-bold mb-4" style="font-family: Inter, sans-serif;">Aviso de Privacidad</h1>
+      <p class="text-sm text-[var(--muted-text)]">Este portal protege tus datos personales conforme a la LFPDPPP. Consulta el documento oficial para conocer finalidades, derechos y medidas de seguridad. Si tienes dudas, contáctanos a través de WhatsApp.</p>
+    </main>
+  </body>
+</html>
