@@ -1,0 +1,71 @@
+/* Global design tokens using OKLCH */
+:root {
+  --bg: oklch(98% 0 0deg);
+  --surface: oklch(98% 0 0deg);
+  --card: oklch(99% 0 0deg);
+  --text: oklch(7% 0 0deg);
+  --muted-text: oklch(15% 0 0deg);
+  --primary: oklch(48% 22 220deg);
+  --secondary: oklch(60% 18 315deg);
+  --radius: 12px;
+  --shadow: 0 8px 28px rgba(0,0,0,0.08);
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+}
+
+html, body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: okLch(98% 0 0deg);
+  color: oklch(7% 0 0deg);
+}
+
+.space-sm { padding: var(--space-3); }
+.space-md { padding: var(--space-4); }
+.space-lg { padding: var(--space-6); }
+.shadow { box-shadow: var(--shadow); }
+.rounded { border-radius: var(--radius); }
+
+/* Botón WhatsApp con micro-animación de pulso */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: oklch(60% 22 210deg);
+  color: white;
+  padding: 0.9rem 1.25rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.25s ease;
+}
+.btn-whatsapp:hover { transform: translateY(-1px); }
+.btn-whatsapp:active { transform: scale(0.98); }
+.pulse { animation: pulse 2s infinite; }
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0); }
+  70% { transform: scale(1.04); box-shadow: 0 0 0 8px rgba(0,0,0,0.04); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0,0,0,0.0); }
+}
+
+/* Animaciones de entrada suaves */
+.reveal { opacity: 0; transform: translateY(20px); animation: revealUp 0.8s forwards; }
+.reveal.delay-1 { animation-delay: 0.08s; }
+.reveal.delay-2 { animation-delay: 0.18s; }
+.reveal.delay-3 { animation-delay: 0.28s; }
+@keyframes revealUp {
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { animation: none; opacity: 1; transform: none; }
+  .pulse { animation: none; }
+}

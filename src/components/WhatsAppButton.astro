@@ -1,0 +1,14 @@
+---
+export interface Props {
+  phone: string;
+  text?: string;
+  utm?: string;
+}
+const { phone, text, utm } = Astro.props as Props;
+const defaultText = encodeURIComponent("Hola, me gustaría agendar una cita.");
+---
+<a class="btn-whatsapp pulse reveal" href={`https://wa.me/${phone}?text=${text ?? defaultText}${utm ?? ''}`} aria-label="Abrir WhatsApp para agendar cita" target="_blank" rel="noopener">
+  <span>WhatsApp</span>
+  <span>Agenda ya</span>
+  <span aria-hidden="true">💬</span>
+</a>

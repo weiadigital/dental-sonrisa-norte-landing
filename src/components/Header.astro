@@ -1,0 +1,19 @@
+---
+import VersionSwitcher from './VersionSwitcher.astro';
+---
+<header class="w-full bg-transparent">
+  <div class="max-w-5xl mx-auto px-4 flex items-center justify-between py-4">
+    <div class="flex items-center gap-3">
+      <div aria-label="logo" style="width:34px;height:34px;" class="bg-[oklch(var(--primary))] rounded-full"></div>
+      <strong style="font-family: Inter, sans-serif;">Dental Sonrisa Norte</strong>
+    </div>
+    <nav class="hidden md:flex items-center gap-6 text-sm" aria-label="Main navigation">
+      <a href="#servicios" class="text-[var(--text)] hover:opacity-90">Servicios</a>
+      <a href="#testimonios" class="text-[var(--text)] hover:opacity-90">Testimonios</a>
+      <a href="#nosotros" class="text-[var(--text)] hover:opacity-90">Acerca</a>
+      <a href="#aviso" class="text-[var(--text)] hover:opacity-90">Aviso de Privacidad</a>
+    </nav>
+    <a href="#contacto" class="md:hidden inline-block text-sm px-3 py-2 rounded" style="background: oklch(60% 12 210deg); color:white; text-decoration:none;">Contacto</a>
+  </div>
+  <VersionSwitcher/>
+</header>
