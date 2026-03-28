@@ -11,7 +11,7 @@
   "dependencies": {},
   "devDependencies": {
     "astro": "^6.0.0",
-    "@astrojs/vercel": "^4.0.0",
+    "@astrojs/cloudflare": "^12.0.0",
     "@tailwindcss/vite": "^4.0.0",
     "tailwindcss": "^4.0.0",
     "postcss": "^8.4.21",
